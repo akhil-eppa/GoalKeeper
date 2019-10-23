@@ -1,16 +1,24 @@
 #btn{
   margin: 4em;
-  font-family: 'Roboto';
-  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   color: white;
   padding: 9px 15px;
   border-style: none;
   box-shadow: 0px 3px 8px #e0e0e0;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   border-radius: 4px;
   outline: none;
   -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.4s;
+}
+
+.small {
+    font-size: 0.75em;
+  }
+  
+.large {
+    font-size: 1.25em;
 }
 
 #btn:hover {
