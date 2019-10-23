@@ -1,13 +1,24 @@
 .jumbotron {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
     margin: 1.25em;
     padding: 1em;
     border: 0.05em solid black;
     border-radius: 15px;
+    box-shadow: 0.75em 0.5em 0.7em #aaaaaa;;
     overflow: auto;
 }
 
-div.img-left img{
+div.img-left img {
     float: right;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+}
+
+div.img-right img {
+    float: left;
+    border-radius: 15px;
     width: 25%;
     height: auto;
 }
