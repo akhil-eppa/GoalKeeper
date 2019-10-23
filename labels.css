@@ -1,0 +1,39 @@
+.label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 0.15em 0.50em;
+  border-radius: 16px;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.large {
+  font-size: 1.25em;
+}
+
+.danger {
+  background-image: linear-gradient(160deg, #CC2936 10%, #08415C);
+  color: white;
+}
+
+.success {
+  background-image: linear-gradient(160deg, #44AF69 10%, #9BE564);
+  color: white;
+}
+
+.warning {
+  background-image: linear-gradient(160deg, #E88317 10%, #EDBF76);
+  color: white;
+}
+
+.info {
+   background-image: linear-gradient(160deg, #19647E 40%, #44AF69);
+  color: white;
+}
+
+.uber {
+  background-image: linear-gradient(160deg, #69385C 40%, #A78682);
+  color: white;
+}

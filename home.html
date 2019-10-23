@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elements</title>
+        <link rel = "stylesheet" href = "carousel.css">
+        <link rel = "stylesheet" href = "cards.css">
+        <link rel = "stylesheet" href = "cardsGrid.css">
+        <link rel = "stylesheet" href = "css/all.css">
+        <link rel = "stylesheet" href = "jumbotron.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i|Open+Sans|Oswald:400,500|Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="img1.jpg" class = "carouseImg">
+                <span class = "credits"><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jason Leung"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Jason Leung</span></a></span>
+                <div class="text">
+                    <span class = "carouselTitleText">Caption Text - 1</span>
+                    <br/>
+                    <span class = "carouselContentText">Text below caption</span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img2.jpg" class = "carouseImg">
+                <span class = "credits"><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@socialcut?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from S O C I A L . C U T"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">S O C I A L . C U T</span></a></span>
+                <div class="text">
+                    <span class = "carouselTitleText">Caption Text - 2</span>
+                    <br/>
+                    <span class = "carouselContentText">Text below caption</span>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img3.jpg" class = "carouseImg">
+                <span class = "credits"><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@markusspiske?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Markus Spiske"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Markus Spiske</span></a></span>
+                <div class="text">
+                    <span class = "carouselTitleText">Caption Text - 3</span>
+                    <br/>
+                    <span class = "carouselContentText">Text below caption</span>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class = "dots" style="text-align:center">
+            <span class="dot p1" onclick="currentSlide(1)"></span>
+            <span class="dot p2" onclick="currentSlide(2)"></span>
+            <span class="dot p3" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="blockquote">
+            Good things come to those who wait...
+        </div>
+
+<div class="gridDisplay">
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+
+
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+        <span class="cardTitle">Card Title</span>
+        <br/>
+        <span class="cardContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.</span>
+    </span>
+</div>
+        <script src = "carousel.js"></script>
+
+        <div class = "jumbotron img-left">
+            <img src = "bulb.jpg" alt = "picture of a bulb">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero nibh, pretium porttitor arcu id, bibendum convallis tellus. Nunc placerat quam ex, id dictum libero rutrum id. Aliquam aliquam lectus quam, id volutpat urna laoreet aliquet. Mauris suscipit turpis sed dui sollicitudin aliquet. Proin ac dui libero. Nullam auctor rutrum magna, nec dictum est dictum eget. Mauris faucibus eget neque et luctus. Curabitur pretium nibh orci, in malesuada lacus cursus finibus. Proin dolor erat, feugiat non ultrices quis, aliquet at metus.
+        </div>
+    </body>
+</html>

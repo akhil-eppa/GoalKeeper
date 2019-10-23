@@ -1,0 +1,13 @@
+.jumbotron {
+    margin: 1.25em;
+    padding: 1em;
+    border: 0.05em solid black;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+div.img-left img{
+    float: right;
+    width: 25%;
+    height: auto;
+}
