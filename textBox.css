@@ -1,0 +1,76 @@
+input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  margin: 0.25em 0.25em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text].small {
+    width: 6.25em;
+}
+
+input[type=text].medium {
+    width: 12.25em;
+}
+input[type=text].large {
+    width: 31.25em;
+}
+
+input[type=text].pill{
+  border-radius: 1em;
+}
+
+input[type=text].rounded{
+  border-radius: 0.3125em;
+}
+
+input[type=text]:hover{
+  border: 0.2em solid lightblue;
+}
+
+input[type=text].rounded.pill{
+  border-radius: 1em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline:none;
+    border: 0.2em solid blue !important;
+}
+
+div.comboBtn {
+    position: absolute;
+}
+
+div #clearText {
+    display: inline;
+    color:grey;
+    cursor: grab;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em; 
+    text-decoration: underline;
+    position: relative;
+    left: 85%;
+}
+
+div #clearText:hover {
+    color: black;
+}
+div #clearText {
+    cursor: grab;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em; 
+    text-decoration: underline;
+    position: relative;
+    left: 85%;
+}
+
+div .sideBorder {
+    padding-right: 0.3125em;
+    border-right: solid grey;
+}
