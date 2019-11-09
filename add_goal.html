@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GoalKeeper Add Goal
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel = "stylesheet" href = "labels.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="forms.css">
+        <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+            
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .headspace{
+            height:75px
+        }
+        #heading{
+            color:#BA1200;
+            font-size: 40px;
+            width:100%;
+            align-content: center;
+            text-align: center;
+            cursor:pointer;
+        }
+        .box{
+            height:30px
+        }
+        hr{
+            
+            background-color:black;
+            height: 2px;
+            width:50%;
+            margin-left: 25%;
+            
+            align-content: center;
+            
+        }
+        .hbox{
+            width:75px
+        }
+        form{
+            margin-left:25%;
+            width:50%;
+        }
+        center{
+            font-size: 25px;
+            color: #30CFD0;
+        }
+        </style>
+    </head>
+    <body>
+            <div id = "navBarDiv"> 
+                    <ul id = "navBarList">
+                    <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
+                    <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">Add Goal</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "about_us.html">About Us</a></li></span>
+                    </span><li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
+                    <span class = "rightSide">
+                    <!--<li class = "navBarItem sign"><a href = "#">Sign Up</a></li>-->
+                    <li class = "navBarItem sign"><a href = "#">Sign Out</a></li>
+                    </span>
+                    </ul>
+            </div>
+            <div class="headspace"></div>
+            <div id="heading">
+                <b>Add Your Goal!</b>
+            </div>
+            <div class="box"></div>
+            <hr>
+            <div class="box"></div>
+            <form>
+                <center>What's the Title of your Goal?</center><br>  
+                <center><input type="text" name="title"></center>
+                <div class="box"></div>
+                <center>Enter the Description<br></center>
+                <center><textarea name="description" rows="10" columns="30"></textarea></center>
+                <div class="box"></div>
+                <center>Is your Goal Time Bound?</center><br>
+                <center><input type="radio" name="time_bound" value="Yes" checked>Yes</center><br>
+                <center><input type="radio" name="time_bound" value="No">No</center><br>
+                <div class="box"></div>
+                <center><table>
+                    <tr>
+                        <td><center>Start Date</center></td>
+                        <td></td>
+                        <td><center>End Date</center></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="Start"></td>
+                        <td></td>
+                        <td><input type="date" name="End"></td>
+                    </tr>
+                </table></center>
+                <div class="box"></div>
+                
+                <div class="box"></div>
+                <center>
+                What Type is your Goal?
+                </center>
+                <div class="box"></div>
+                <center>
+                    <select name="label">
+                        <option value="work">Work Related</option>
+                        <option value="study">Study Related</option>
+                        <option value="financial">Financial Related</option>
+                        <option value="bucket_list">Bucket List</option>
+                        <option value="career">Career Related</option>
+                        <option value="others">Others</option>
+                    </select>
+                </center>
+                <div class="box"></div>
+                <center>
+                        <input type="submit" id = "btn" value="Add my Goal"  class = "success">
+                </center>
+                
+            </form>
+
+    </body>
+</html>
