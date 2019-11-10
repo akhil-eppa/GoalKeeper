@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        GoalKeeper FAQs
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="navbar.css">
+    <style>
+         *{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+            font-size:20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .question{
+            background-color:white;
+            color: #BA1200;
+            cursor:pointer;
+            width:100%;
+            padding:20px;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size:20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .question:hover{
+            background-color: rgb(247, 244, 244);
+        }
+        .active .question:hover{
+            background-color:lightsalmon;
+        }
+        .question:after{
+            content:"\02795";
+            
+            float:right;
+            margin-right: 25%;
+            color: #BA1200;
+            border-color: #BA1200;
+        }
+        .active:after{
+            content:'\2796';
+            border-block-color: #BA1200;
+        }
+        .panel{
+            
+            padding:20px;
+            overflow: hidden;
+            background-color: white;
+            color: black;
+            display: none;
+        }
+        .q{
+            color:black;
+        }
+        #heading{
+            color:black;
+            padding:20px;
+            width:50%;
+            margin-left: 25%;
+
+        }
+        hr{
+            
+            background-color: #BA1200;
+            height: 2px;
+            width:50%;
+            margin-left: 25%;
+            
+            align-content: center;
+            
+        }
+        #head_space{
+            height:40px
+        }
+
+
+    </style>
+</head>
+<body>
+        <div id = "navBarDiv"> 
+                <ul id = "navBarList">
+                <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
+                <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+                <span class = "vl"><li class = "navBarItem element"><a href = "add_goal.html">Add Goal</a></li></span>
+                <span class = "vl"><li class = "navBarItem element"><a href = "about_us.html">About Us</a></li></span>
+                <li class = "navBarItem element"><a href = "#"  id="active">FAQ</a></li>
+                <span class = "rightSide">
+                <li class = "navBarItem sign"><a href = "#">Sign Up</a></li>
+                <li class = "navBarItem sign"><a href = "#">Sign In</a></li>
+                </span>
+                </ul>
+        </div>
+        <div id="head_space"></div>
+    <div id="heading">
+    <center><b>Frequently Asked Questions</b></center>
+    </div>
+
+    <hr>
+
+    <button class="question"><span class="q">Q.</span> How can I my add goals and habits?</button>
+
+    <div class="panel">
+        The process is very easy.<br>All you need to do is login, go to the Goals and Habits Page and set your goals and timeframe needed to complete them.
+    </div>
+    <hr>
+    <button class="question"><span class="q">Q.</span> What are the different packages offered?</button>
+    <div class="panel">
+        Currently there is only a common basic plan available for all users at no cost.<br>Hence there are no upgrades available as of now.
+    </div>
+    <hr>
+    <button class="question"><span class="q">Q.</span> How can I track my habits?</button>
+    <div class="panel">
+        One needs to set as to how often he would like to repeat his/her habits.<br>Based on this all the necessary tracking will take place and the user would be reminded at regular intervals.
+    </div>
+    <hr>
+    <button class="question"><span class="q">Q.</span> What about the medals?</button>
+    <div class="panel">
+        As one keeps achieving goals, he/she gets medals. The medals are awarded as follows<br>
+        <ul>
+            <li>5 Goals - Bronze Medal</li>
+            <li>10 Goals - Silver Medal</li>
+            <li>20 Goals - Gold Medal</li>
+        </ul>
+    </div>
+    <script>
+        var q=document.getElementsByClassName("question");
+        for (var i=0;i<q.length;i++)
+        {
+            q[i].addEventListener("click",open,false);
+        }
+        function open()
+        {
+            this.classList.toggle("active");
+            var ans=this.nextElementSibling;
+            if (ans.style.display=="block")
+            {
+                ans.style.display="none";
+            }
+            else
+            {
+                ans.style.display="block";
+            }
+        }
+    </script>
+</body>
