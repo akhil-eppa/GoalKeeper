@@ -3,6 +3,6 @@ var ele = document.getElementById("clearText");
 
 ele.addEventListener("click", clearText, false);
 
-function clearText() {
+function clearText(e) {
     textBox.value = " ";
 }
