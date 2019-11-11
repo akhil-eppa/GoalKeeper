@@ -1,4 +1,4 @@
-input[type=text] {
+input[type=text], input[type=password] {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   padding: 0.5em 0.5em;
@@ -8,30 +8,30 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-input[type=text].small {
+input[type=text].small, input[type=password].small {
     width: 6.25em;
 }
 
-input[type=text].medium {
+input[type=text].medium, input[type=password].medium {
     width: 12.25em;
 }
-input[type=text].large {
+input[type=text].large, input[type=password].large {
     width: 31.25em;
 }
 
-input[type=text].pill{
+input[type=text].pill, input[type=password].pill {
   border-radius: 1em;
 }
 
-input[type=text].rounded{
+input[type=text].rounded, input[type=password].rounded {
   border-radius: 0.3125em;
 }
 
-input[type=text]:hover{
+input[type=text]:hover, input[type=password]:hover { 
   border: 0.2em solid lightblue;
 }
 
-input[type=text].rounded.pill{
+input[type=text].rounded.pill, input[type=password].rounded.pill { 
   border-radius: 1em;
 }
 
@@ -47,7 +47,7 @@ div.comboBtn {
     position: absolute;
 }
 
-div #clearText {
+div .clearText {
     display: inline;
     color:grey;
     cursor: grab;
@@ -58,10 +58,10 @@ div #clearText {
     left: 85%;
 }
 
-div #clearText:hover {
+div .clearText:hover {
     color: black;
 }
-div #clearText {
+div .clearText {
     cursor: grab;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.85em; 
