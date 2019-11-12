@@ -9,14 +9,13 @@
         <link rel = "stylesheet" href = "labels.css">
         <link rel="stylesheet" href="button.css">
         <link rel="stylesheet" href="forms.css">
-        <link rel = "stylesheet" href = "cards2.css">
+        <link rel = "stylesheet" href = "cards2.css"> <!--Bigger in size than cards.css-->
         <style>
         *{
             margin:0;
             padding:0;
             list-style: none;
             text-decoration: none;
-            
             font-family: 'Ubuntu', sans-serif;
         }
         
@@ -48,8 +47,8 @@
             width:75px
         }
         form{
-            margin-left:25%;
-            width:50%;
+            margin-left:15%;
+            width:70%;
         }
         center{
             font-size: 25px;
@@ -58,9 +57,7 @@
         </style>
     </head>
     <body>
-
-            
-            <div id = "navBarDiv"> 
+            <div id = "navBarDiv"> <!--Component Code-->
                     <ul id = "navBarList">
                     <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
                     <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
@@ -80,38 +77,56 @@
                     <span class="cardContent">
 
                             <div class="headspace"></div>
-            <div id="heading">
-                <b>Add Your Goal!</b>
-            </div>
-            <div class="box"></div>
-            <hr>
-            <div class="box"></div>
+                            <div id="heading">
+                            <b>Add Your Goal!</b>
+                            </div>
+                            <div class="box"></div>
+                            <hr>
+                            <div class="box"></div>
                             <form>
                                     <center>What's the Title of your Goal?</center><br>  
-                                    <center><input type="text" name="title"></center>
+                                    <center><input type="text" name="title" placeholder="Enter Title Here"></center>
                                     <div class="box"></div>
-                                    <center>Enter the Description<br></center>
-                                    <center><textarea name="description" rows="10" columns="30"></textarea></center>
+                                    <center>Enter the Description<br></center><br>
+                                    <center><textarea name="description" rows="10" columns="30" placeholder="Enter Description Here"></textarea></center>
                                     <div class="box"></div>
                                     <center>Is your Goal Time Bound?</center><br>
-                                    <center><input type="radio" name="time_bound" value="Yes" checked>Yes</center><br>
-                                    <center><input type="radio" name="time_bound" value="No">No</center><br>
+                                    <center>
+                                    <table id="yesno">
+                                        <tr>
+                                            <td width="25%">
+                                                <center><input type="radio" name="time_bound" value="Yes">Yes</center>
+                                            </td>
+                                            <td width ="25%"></td>
+                                            <td width ="25%"></td>
+                                            <td width="25%">
+                                                <center><input type="radio" name="time_bound" value="No">No</center>
+
+                                            </td>
+                                            
+                                        </tr>
+                                    </table>
+                                    </center>
                                     <div class="box"></div>
+                                    <hr>
+                                    <br>
+                                    <br>
                                     <center><table>
                                         <tr>
-                                            <td><center>Start Date</center></td>
-                                            <td></td>
-                                            <td><center>End Date</center></td>
+                                            <td width="40%"><center>Start Date</center></td>
+                                            <td width="20%"></td>
+                                            <td width="40%"><center>End Date</center></td>
                                         </tr>
+                                        <tr></tr>
                                         <tr>
-                                            <td><input type="date" name="Start"></td>
-                                            <td></td>
-                                            <td><input type="date" name="End"></td>
+                                            <td width="40%"><input id="cal1" type="date" name="Start"></td>
+                                            <td width="20%"></td>
+                                            <td width="40%"><input id="cal2" type="date" name="End"></td>
                                         </tr>
                                     </table></center>
                                     <div class="box"></div>
                                     
-                                    <div class="box"></div>
+                                    
                                     <center>
                                     What Type is your Goal?
                                     </center>
@@ -126,9 +141,9 @@
                                             <option value="others">Others</option>
                                         </select>
                                     </center>
-                                    <div class="box"></div>
+                                    <br>
                                     <center>
-                                            <input type="submit" id = "btn" value="Add my Goal"  class = "success">
+                                            <input type="submit" id = "btn" value="Add my Goal" class = "success">
                                     </center>
                                     
                                 </form>
@@ -136,7 +151,12 @@
                 
             </span>
             
-            
+            <script>
+                
+                
+                
+                
+            </script>
 
     </body>
 </html>
