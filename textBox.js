@@ -1,8 +1,20 @@
-var textBox = document.getElementById("controlBox");
-var ele = document.getElementById("clearText");
+var passText = document.getElementById("controlBox");
+var clearBox = document.getElementById("clear");
+var showBox = document.getElementById("show");
 
-ele.addEventListener("click", clearText, false);
 
-function clearText(e) {
-    textBox.value = " ";
+clearBox.addEventListener("click", clearText, false);
+showBox.addEventListener("mouseover", showPass, false);
+showBox.addEventListener("mouseout", hidePass, false);
+
+function clearText() {
+    passText.value = "";
+}
+
+function showPass() {
+  passText.type = "text";
+}
+
+function hidePass() {
+  passText.type = "password";
 }
