@@ -1,0 +1,278 @@
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="navbar.css">
+      <link rel="stylesheet" href="footer/footer.css">
+      <link rel="stylesheet" href="snip.css">
+      <link rel = "stylesheet" href = "css/all.css">
+      <style type="text/css">
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 125%;
+  width: 200px;
+  position: absolute;
+  top: 3.40em;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn, .sidenav span{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover, .sidenav span:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+button {
+    outline: none;
+}
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#divider {
+    height: 0.25em;
+    background-color: #111;
+    width: 40%;
+    position: absolute;
+    top: 30em;
+    left: 42em;
+    margin: 2em 0em;
+}
+      </style>
+    </head>
+    <body>
+        <!-- Navbar of the website-->
+        <div id = "navBarDiv" style="z-index: 1 !important;"> 
+            <img alt = "GoalKeeperLogo" src="gk_logo.png" id="logo"></img>
+            <ul id = "navBarList" style="text-align: center; margin-left: 5em; cursor: default;">
+                    <li class = "navBarItem element">Medals Gallery</li></span>
+                <span class = "rightSide">
+                  <li class = "navBarItem sign"><a href = "#">Sign Out</a></li>
+                </span>
+            </ul>
+        </div>
+
+        <div class="sidenav">
+                <span href="#about">Your Dashboard</span>
+                <a href="#services">Add Goal</a>
+                <a href="#clients">Add Habits</a>
+                <a href="#clients">My Goals & Habits</a>
+                <a href="#clients">Statistics & Analysis</a>
+                <a href="#clients">Achievements</a>
+                <a href="#contact">Forums</a>
+                <button class="dropdown-btn" style="cursor: help;">Tips 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                  <a href="#">Goal Builder</a>
+                  <a href="#">Habit Generator</a>
+                  <a href="#">News</a>
+                </div>
+                <a href="#contact">Profile</a>
+              </div>-
+
+              <div class="helper"></div>
+ 
+              <hr id = "divider">
+              <br>
+   <h1>Medals you are yet achieved</h1>    
+   <div class="snip">
+        <div class="dot"></div>
+        <span class="medal" style="color: #DEBA6F;"><i class="fab fa-affiliatetheme"></i></span>
+        <hr>
+        <div class="medalTitle">First Milestone</div>
+        <br>
+        <div class = "desc">Time to celebrate in Joy!<br>you achieved you first<br>milestone.<br>A start couldn't be any better.<br>Great Job.<br>Keep it Up!</div>
+</div>
+
+
+<div class="snip">
+        <div class="dot"></div>
+        <span class="medal" style="color: #FAA916;"><i class="fas fa-certificate"></i></span>
+        <hr>
+        <div class="medalTitle">First 10</div>
+        <br>
+        <div class = "desc">You were able to<br>meet your 1<sup>st</sup> 10 goals successfully.<br> Great Job!</div>
+</div>
+
+<div class="snip">
+        <div class="dot"></div>
+        <span class="medal" style="color: #96031A;"><i class="fas fa-award"></i></span>
+        <hr>
+        <div class="medalTitle">First 20</div>
+        <br>
+        <div class = "desc">You were able to<br>meet your 1<sup>st</sup> 20 goals successfully.<br> Great Job!</div>
+</div>
+
+
+<div class="snip">
+        <span class="medal" style="color: #36C9C6;"><i class="fas fa-atom"></i></span>
+        <hr>
+        <div class="medalTitle">The Journey Begins</div>
+        <br>
+        <div class = "desc">You have begin you<br>path to greatness by achieveing your<br>first set of goals.<br> Great Job!</div>
+</div>
+
+<div class="snip">
+        <span class="medal" style="color: #392B58;"><i class="fas fa-angle-double-up"></i></span>
+        <hr>
+        <div class="medalTitle">First 5</div>
+        <br>
+        <div class = "desc">You have levelled up!<br>You were able to<br>meet your 1<sup>st</sup> 5 goals successfully.<br> Great Job!</div>
+</div>
+
+
+<h1>Medals you are yet achieved</h1>
+        <div class="snip">
+                <span class="medal" style="color: #BF6900;"><i class="fas fa-archway"></i></span>
+                <hr>
+                <div class="medalTitle">Fortified Will</div>
+                <br>
+                <div class = "desc">You were able to<br>protect your will<br>from begin broken<br>from distractions and have<br>achieved all your <br>goals for the month.<br> Great Job!</div>
+       </div>
+
+       <div class="snip">
+            <span class="medal" style="color: #FF6663;"><i class="fas fa-brain"></i></span>
+            <hr>
+            <div class="medalTitle">Smart Goals Master</div>
+            <br>
+            <div class = "desc">You proved us wrong<br>you really are in control,<br>of your life.<br>You had a lot of goals to meet, but smart planning gave you a smooth<br>ride to the finish!</div>
+   </div>
+        <!--Footer of the website-->
+        <footer>
+            <div class="footer__block">
+                <h2>Social</h2>
+                <ul>
+                    <li>
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The future of managing your Goals and Habits is coming soon.... <a href="https://twitter.com/hashtag/GoalKeeper?src=hash&amp;ref_src=twsrc%5Etfw">#GoalKeeper</a></p>&mdash; Rishit Chs (@Rishit_C) <a href="https://twitter.com/Rishit_C/status/1193597000593207296?ref_src=twsrc%5Etfw">November 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+                </ul>
+            </div>
+      <div class = "vl"></div>
+            <div class="footer__block">
+                <h2>Team</h2>
+                <ul id="gap">
+                    <li>
+                        <a href="https://github.com/rishitc" target = "_blank">Rishit Chaudhary</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/akhil-eppa" target = "_blank">Akhil Eppa</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/varuntirthani" target = "_blank">Varun Tirthani</a>
+                    </li>
+                </ul>
+            </div>
+      <div class = "vl"></div>
+            <div class="footer__block">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>
+                        <span href="#">We would love to hear from you,<br/>Please enter your details below<br/>and we will get in touch with you at<br/>the earliest.</span>
+                    </li>
+                    <li>
+                        <span class = "field">Email ID</span>
+              <div class="comboBtn">
+                <input type="email" class="rounded large" id="controlBox" name="emailId"></input>
+                <br/>
+                <p class="sideBorder clearText" id = "clearOptn">Clear</p>
+        </div>
+          <br/>
+                    </li>
+      
+                    <li>
+              <br/>
+              <form action = "" method="get">
+                        <span class = "field">Message</span>
+              <div class="comboBtn">
+                <textarea rows = "5" cols = "25"class="rounded large" id="controlBoxTa" name="textArea"></textarea>
+                <br/>
+                <p class="sideBorder clearText" id = "clearOptnTextArea">Clear</p>
+              </div>
+            </form>
+      </li>
+      <li><input type="submit" id = "btn" value="Success button"  class = "success" value="Submit">
+    <div id="helper"></div></li>
+    </ul>
+        </div>
+      <div class = "vl"></div>
+            <div class="footer__block">
+                <h2>Location</h2>
+                <ul>
+                    <li>
+                        <img src="footer/pes_map.png" height="250" width="250">
+                    </li>
+                    <li>PES University,<br/>
+                        100 Feet Ring Road,<br/>
+                        BSK III Stage,<br/>
+                        Bangalore-560085</li>
+                </ul>
+            </div>
+        </footer>
+        <script src="footer/footer.js" type="text/javascript"></script>
+        <script src="add_medals.js" type="text/javascript"></script>
+        <script>
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+                
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+                </script>
+                
+    </body>
+</html>
