@@ -95,7 +95,7 @@
                                     <table id="yesno">
                                         <tr>
                                             <td width="25%">
-                                                <center><input type="radio" name="time_bound" value="Yes">Yes</center>
+                                                <center><input type="radio" name="time_bound" value="Yes" id="rd">Yes</center>
                                             </td>
                                             <td width ="25%"></td>
                                             <td width ="25%"></td>
@@ -152,7 +152,24 @@
             </span>
             
             <script>
-                
+                var y=document.getElementById("form");
+                y.addEventListener("click","cal",false);
+                cal_1=document.getElementById("cal1");
+                cal_2=document.getElementById("cal2");
+                function cal()
+                {
+                    var rd=document.getElementById("rd");
+                    if (rd.checked==true)
+                    {
+                        cal_1.setAttribute("enabled","true");
+                        cal_2.setAttribute("enabled","true");
+                    }
+                    else
+                    {
+                        cal_1.setAttribute("enabled","false");
+                        cal_2.setAttribute("enabled","false");
+                    }
+                }
                 
                 
                 
