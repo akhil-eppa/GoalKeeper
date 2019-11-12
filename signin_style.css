@@ -160,3 +160,34 @@ input[type="submit"]:focus
     transition: 0.2s ease;
     cursor: pointer;
 }
+div.comboBtn {
+    position: absolute;
+}
+
+div .clearText {
+    display: inline;
+    color:grey;
+    cursor: grab;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em; 
+    text-decoration: underline;
+    position: relative;
+    left: 85%;
+}
+
+div .clearText:hover {
+    color: black;
+}
+div .clearText {
+    cursor: grab;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em; 
+    text-decoration: underline;
+    position: relative;
+    left: 85%;
+}
+
+div .sideBorder {
+    padding-right: 0.3125em;
+    border-right: solid grey;
+}
