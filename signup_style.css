@@ -1,0 +1,250 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+  }
+#sign_up
+{
+    position: relative;
+    margin: 10% auto;
+    height:400px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.555);
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.6);*/
+}
+.left_box
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    /*box-sizing: border-box;*/
+    padding: 40px;
+    width:300px;
+    height: 400px;
+}
+.right_box
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width:300px;
+    height: 400px;
+}
+h1
+{
+    margin: 0 0 20px 245px; /* top right bottom left */
+    font-weight: 300px;
+    font-size: 28px;
+}
+input[type="text"],input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+input[type="submit"]
+{
+    margin-bottom: 28px;
+    width: 120px;
+    height:32px;
+    background: #BA1200;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #BA1200;
+    transition: 0.2s ease;
+}
+.cards {
+    /* position: relative;
+    left: 2em; */
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    width:20em;
+    box-shadow: 0.75em 0.5em 0.7em #aaaaaa;
+    border: 0.05em solid black;
+    margin: 0 2em 2em 0;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.cardTitle {
+    font-weight: 500;
+    font-size: 1.75em;
+}
+
+.cardImg {
+margin-bottom: 0;
+}
+
+.cardcontent {
+    font-weight: 400;
+}
+
+
+#sign_up
+{
+    position: relative;
+    margin: 10% auto;
+    height:400px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.555);
+    /*box-shadow: 0 2px 4px rgba(0,0,0,0.6);*/
+}
+.left_box
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    /*box-sizing: border-box;*/
+    padding: 40px;
+    width:300px;
+    height: 400px;
+}
+.right_box
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width:300px;
+    height: 400px;
+}
+h1
+{
+    margin: 0 0 20px 245px; /* top right bottom left */
+    font-weight: 300px;
+    font-size: 28px;
+}
+input[type="text"],input[type="password"],input[type="radio"],input[type="submit"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+input[type="submit"]
+{
+    margin-bottom: px;
+    width: 120px;
+    height:32px;
+    background: #BA1200;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+    position: relative;
+    
+}
+
+  
+  #navBarDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0em 0.1em 1em #aaaaaa;
+    font-size: 1.75em;
+    font-weight: 500;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    margin: 0em;
+    padding: 0em;
+    
+  }
+  
+  #navBarDiv a {
+    text-decoration: none;
+  }
+  
+  #navBarList {
+    height: 1.5em;
+    margin: 0em;
+    padding-top: 0.35em;
+  }
+  
+  .navBarItem {
+     list-style-type: none;
+     text-align: center;
+     display: inline;
+  }
+  
+  .vl {
+    border-right: 0.05em solid #717370;
+  }
+  
+  .element {
+    padding: 0.15em 0.30em 0.15em 0.09em;
+    margin: 0.5em 0em;
+  }
+  
+  .element:hover {
+    border-bottom: 0.1em solid #E8AA00;
+  }
+  
+  .altSize {
+    font-size: 0.7em;
+  }
+  
+  .rightSide {
+      float: right;
+  }
+  
+  .element a {
+    color: #26A5A5;
+  }
+  
+  .sign a{
+    padding: 0.05em 0.15em;
+    background: linear-gradient(30deg, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+      color: transparent;
+    border: 0.15em solid transparent;
+    border-radius: 2em;
+    border-image-source: linear-gradient(30deg, #30CFD0 0%, #330867 100%);
+    border-image-slice: 1;
+    margin-right: 0.2em;
+  }
+  
+  #active{
+    color:#BA1200
+  }
+  
+  
