@@ -182,3 +182,7 @@ div .clearText {
 footer img {
     margin-top: 3em;
 }
+
+footer #controlBoxTa {
+  resize: none;
+}
