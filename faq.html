@@ -11,7 +11,6 @@
             padding:0;
             list-style: none;
             text-decoration: none;
-            
             font-family: 'Ubuntu', sans-serif;
         }
         .question{
@@ -26,7 +25,7 @@
             font-size:25px;
             font-family: 'Ubuntu', sans-serif;
         }
-        .question:hover{
+        .question:hover{ /* When you are moving over the question*/
             background-color: rgb(247, 244, 244);
         }
         .active .question:hover{
@@ -86,7 +85,7 @@
     </style>
 </head>
 <body>
-        <div id = "navBarDiv"> 
+        <div id = "navBarDiv"> <!-- Component Code-->
                 <ul id = "navBarList">
                 <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
                 <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
@@ -106,8 +105,8 @@
 
     <hr>
 
-    <button class="question"><span class="q">Q.</span> How can I my add goals and habits?</button>
-
+    <button class="question"><span class="q">Q.</span> How can I my add goals and habits?</button> <!-- The whole width of the question along with the + symbol is the button-->
+    <!--Span is used for differentiating Q from the actual question-->
     <div class="panel">
         The process is very easy.<br>All you need to do is login, go to the Goals and Habits Page and set your goals and timeframe needed to complete them.
     </div>
@@ -135,12 +134,12 @@
         var q=document.getElementsByClassName("question");
         for (var i=0;i<q.length;i++)
         {
-            q[i].addEventListener("click",open,false);
+            q[i].addEventListener("click",open,false); // Bubbling is not of much importance since it is not nested in any way
         }
         function open()
         {
-            this.classList.toggle("active");
-            var ans=this.nextElementSibling;
+            this.classList.toggle("active"); //Activated only whne clicked upon
+            var ans=this.nextElementSibling; // Not child but sibling because question and answer goes hand-in-hand
             if (ans.style.display=="block")
             {
                 ans.style.display="none";
