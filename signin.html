@@ -4,17 +4,21 @@
     <title> SIGN IN </title>
     <link rel="stylesheet" type="text/css" href="signin_style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> <!--For embedding font Ubuntu-->
+    <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
 </head>
 <body>
-    <div class="main_menu">
-                <ul>
-                <li><a href="home.html" class=""><b>HOME</b></a></li>
-                <li><a href="aboutus.html" class=""><b>ABOUT US</b></a></li>
-                <li><a href="faq.html" class=""><b>FAQ</b></a></li>
-                <li style="float: right;"><a href="signup.html" class="active"><b>SIGN IN</b></a></li>
-                <li style="float: right;"><a href="signup.html" class=""><b>SIGN UP</b></a></li>
-                </ul>
-    </div>
+    <div id = "navBarDiv"> 
+        <ul id = "navBarList">
+        <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
+        <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+        <span class = "vl"><li class = "navBarItem element"><a href = "add_goal.html">Add Goal</a></li></span>
+        <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">About Us</a></li></span>
+        <li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
+        <span class = "rightSide">
+        <li class = "navBarItem sign"><a href = "#">Sign Up</a></li>
+        </span>
+        </ul>
+</div> <!-- Component Code-->
 <!-- Need to prepare clear show remember me and outline design of the page-->
     <div id="sign_in">
         <div class="left_box">

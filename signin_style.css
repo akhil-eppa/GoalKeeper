@@ -8,14 +8,6 @@ body
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300; 
 }
-#main_menu {
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: 0.05em 0.05em 0.05 black;
-    font-size: 1.1em;
-    font-family: 'Ubuntu', sans-serif;
-    color: #BA1200;
-}
 ul
 {
     list-style-type: none; /* Removes the bullets */
@@ -27,19 +19,10 @@ li
     display: inline; /* By default inline is a block element. Can also be done using the foat attribute and assigning left/right to it */
     border-right: 1px solid #fff;
 }
-.active
-{
-    background-color: #00A82D;
-}
 li a
 {
     color: white;
     text-align: center;
-    padding: 24px 26px;
-}
-li a:hover
-{
-    background-color: #00A82D;
     padding: 24px 26px;
 }
 #sign_in
