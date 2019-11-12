@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GoalKeeper Add Habit
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel= "stylesheet" href = "labels.css">
+        <link rel="stylesheet" href="button.css">
+        <link rel="stylesheet" href="forms.css">
+        <link rel = "stylesheet" href = "cards2.css">
+        <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+            
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .headspace{
+            height:75px
+        }
+        #heading{
+            color:#BA1200;
+            font-size: 40px;
+            width:100%;
+            align-content: center;
+            text-align: center;
+            cursor:pointer;
+        }
+        .box{
+            height:30px
+        }
+        hr{
+            
+            background-color:black;
+            height: 2px;
+            width:50%;
+            margin-left: 25%;
+            
+            align-content: center;
+            
+        }
+        .hbox{
+            width:75px
+        }
+        form{
+            margin-left:25%;
+            width:50%;
+        }
+        center{
+            font-size: 25px;
+            color: #30CFD0;
+        }
+        .rleft{
+            align-content: left;
+            text-align: left;
+        }
+        .rright{
+            align-content: right;
+            text-align: right;
+        }
+        </style>
+    </head>
+    <body>
+            <div id = "navBarDiv"> 
+                    <ul id = "navBarList">
+                    <li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>
+                    <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">Add Goal</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "about_us.html">About Us</a></li></span>
+                    </span><li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
+                    <span class = "rightSide">
+                    <li class = "navBarItem sign"><a href = "#">Sign Out</a></li>
+                    </span>
+                    </ul>
+            </div>
+            <div class="headspace"></div>
+           
+            
+
+
+            <span class = "cards">
+                    <br/>
+                    <span class="cardContent">
+
+                            <div class="headspace"></div>
+                            <div id="heading">
+                            <b>Add Your Habit!</b>
+                            </div>
+                            <div class="box"></div>
+                            <hr>
+                            <div class="box"></div>
+                            <form>
+                                    <center>Title Of Habit</center><br>  
+                                    <center><input type="text" name="title" placeholder="Enter Title Here"></center>
+                                    <div class="box"></div>
+                                    <center>Enter The Description</center> <br>
+                                    <center><textarea name="description" rows="10" columns="30" placeholder="Enter Description Here"></textarea></center>
+                                    <div class="box"></div>
+                                    <center>How Often?</center><br>
+                                    <center><table>
+                                        <tr>
+                                            <td width="30%"">
+                                                    <center><input type="radio" class="rleft" name="time_period" value="Daily" checked>Daily</center><br>
+                                            </td>
+                                            
+                                            <td width="30%">
+                    
+                                            </td>
+                                            <td width="30%">
+                                                    <center><input type="radio" class="rright" name="time_period" value="Weekly">Weekly</center><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">
+                                                    <center><input type="radio" class="rleft" name="time_period" value="Biweekly">Biweekly</center><br>
+                                            </td>
+                                           
+                                            <td width="30%">
+                        
+                                            </td>
+                                            <td width="30%">
+                                                    <center><input type="radio" class="rright" name="time_period" value="Monthly">Monthly</center><br>
+                                            </td>
+                                        </tr>
+                                    </table></center>
+                                    
+                                   
+                                    
+                                    <br>
+                                    <br>
+                                    <center> Reminders?</center><br>
+                                    <center><table>
+                                        <tr>
+                                            <td width="30%">
+                                                    <center><input type="radio" class="rleft" name="reminder" value="Yes" checked>Yes</center><br>
+                                            </td>
+                                            <td width="30%">
+                    
+                                            </td>
+                                            <td width="30%">
+                                                    <center><input type="radio" class="rright" name="reminder" value="No">No</center><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                    
+                                    <center>Mode</center><br> <!-- To appear only after Yes is clicked and not otherwise and data to be collected from the backend-->
+                                    <center><input type="radio" class="rleft" name="reminder_mode" value="Email" checked>Email ID</center><br>
+                                    <center><input type="radio" class="rright" name="reminder_mode" value="Mobile">Mobile Number</center><br>
+                                    <center>
+                                            <input type="submit" id = "btn" value="Add my Habit"  class = "success">
+                                    </center>
+                                    
+                                </form>
+                    </span>
+                
+            </span>
+
+    </body>
+</html>
