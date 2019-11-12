@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="signin_style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> <!--For embedding font Ubuntu-->
     <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
+    <link rel = "stylesheet" href = "signin_card.css">
 </head>
 <body>
     <div id = "navBarDiv"> 
@@ -20,20 +21,45 @@
         </ul>
 </div> <!-- Component Code-->
 <!-- Need to prepare clear show remember me and outline design of the page-->
-    <div id="sign_in">
-        <div class="left_box">
-            <h1> SIGN IN </h1>
-            <input type="text" placeholder="Username" name="username"/>
-            <input type="text" placeholder="Email ID" name="email"/>
-            <input type="password" placeholder="Password" name="password"/>
-            <input type="submit" value="SIGN IN"/>
-        </div>
-        <div class="right_box">
-            <button class="google"> Log In With Google </button>
-            <button class="facebook"> Log In With Facebook </button>
-            <button class="twitter"> Log In With Twitter </button>
-        </div>
-        <div class="or"> OR </div>
-    </div>
+    <div id="headspace"></div>
+   
+    <center>
+    <span class = "cards">
+        <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+        <br/>
+
+
+        <span class="cardContent"><div id="sign_in">
+                
+                <center><table>
+                <tr>
+                <td>
+                
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <div class="left_box">
+                    <h1> SIGN IN </h1>
+                    <input type="text" placeholder="Username" name="username"/>
+                    <input type="text" placeholder="Email ID" name="email"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <input type="submit" value="SIGN IN"/>
+                </div>
+                <div class="right_box">
+                    <button class="google"> Log In With Google </button>
+                    <button class="facebook"> Log In With Facebook </button>
+                    <button class="twitter"> Log In With Twitter </button>
+                </div>
+                <div class="or"> OR </div>
+            </div>
+        </td>
+    </tr>
+</table>
+</center>
+    </span>
+    </span>
+</center>
+    
 </body>
 </html>
