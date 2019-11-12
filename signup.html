@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> GoalKeeper Sign Up </title>
+    <title> SIGN UP </title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> <!--For embedding font Ubuntu-->
     <link rel="stylesheet" type="text/css" href="signup_style.css">
+    <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
+    <link rel = "stylesheet" href = "signup_card.css">
 </head>
 <body>
     <div id = "navBarDiv"> 
@@ -13,15 +15,24 @@
         <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">About Us</a></li></span>
         <li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
         <span class = "rightSide">
-        <li class = "navBarItem sign"><a href = "#">Sign Up</a></li>
         <li class = "navBarItem sign"><a href = "#">Sign In</a></li>
         </span>
         </ul>
-</div>
+    </div>  
+
+   <!-- Need to prepare clear show remember me and outline design of the page-->
+   <div id="headspace"></div>
+   <center>
+   <span class = "cards">
+       <span class = "cardImg"><i class="fab fa-angrycreative fa-10x"></i></span>
+       <br/>
+        <br/>
+        <br/>
+        <br/>
+       <span class="cardTitle">SIGN UP</span>
 <!-- Need to prepare clear show remember me and outline design of the page-->
     <form action="" method="GET">   
     <div id="sign_up">
-        <h1> SIGN UP </h1>
         <div class="left_box">
             <input type="text" placeholder="First Name" name="first"/>
             <input type="text" placeholder="Email ID" name="email"/>
@@ -33,10 +44,9 @@
             <input type="password" placeholder="Password" name="password"/>
             <input type="password" placeholder="Confirm Password" name="cpassword"/>
             <input type="text" placeholder="Your Answer" name="securityanswer"/>
+            
         </div>
-        <input type="radio" name="gender" value="m">Male</input>
-        <input type="radio" name="gneder" value="f">Female</input>
-        <input type="submit" value="REGISTER"/>
     </div>
+    <center> <input type="submit" value="REGISTER" class="success"/> </center>
 </body>
 </html>
