@@ -53,7 +53,7 @@ li a
     padding: 40px;
     width:300px;
     height: 400px;
-    background-image: url(rightimage.jpg);
+    /*background-image: url(rightimage.jpg);*/
 }
 .or
 {
@@ -115,13 +115,14 @@ input[type="submit"]:focus
 .facebook
 {
     background: #0064E8;
+    
     margin-top: 25px;
     margin-bottom: 30px;
     width: 220px;
     height: 36px;
     border: none;
     border-radius: 2px;
-    color: #000;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -136,7 +137,7 @@ input[type="submit"]:focus
     height: 36px;
     border: none;
     border-radius: 2px;
-    color: #000;
+    color:white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -144,7 +145,8 @@ input[type="submit"]:focus
 }
 .google
 {
-    background: #ffffff;
+    background: red;
+
     top: 300px;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -152,7 +154,7 @@ input[type="submit"]:focus
     height: 36px;
     border: none;
     border-radius: 2px;
-    color: #000;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
