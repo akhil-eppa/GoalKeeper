@@ -3,10 +3,102 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/all.css">
+    <style>
+        .navbar-text{
+            letter-spacing: 0.1em; 
+            margin-right: 2em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+        }
+        #title {
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: underline;
+            font-size: 3.5em;
+            padding-left: 1.2em;
+            margin-bottom: 1em;
+            border-left-style: solid;
+            border-left-width: 0.2em;
+            border-left-color: cornflowerblue;
+        }
+        hr {
+            width: 65%;
+            text-align: center;
+        }
+        .large-space {
+            margin: 4em 0em;
+        }
+        .medium-space {
+            margin: 2em 0em;
+        }
+        .smaller {
+            font-size: 3em;
+        }
+        .gradient-b-r {
+            background-image: linear-gradient(75deg, #3E2F5B , #DB340A);
+            border-style: none;
+            border-radius: 0.5em;
+            color: white;
+        }
+        .gradient-lb-db {
+            background-image: linear-gradient(75deg, #60E1E0 , #6369D1);
+            border-style: none;
+            border-radius: 0.5em;
+            color: black;
+        }
+        .gradient-l-p {
+            background-image: linear-gradient(75deg, #E7A977, #C7CB85 );
+            border-style: none;
+            border-radius: 0.5em;
+            color: black;
+        }
+        .gradient-r-b {
+            background-image: linear-gradient(75deg, #E54B4B, #444140);
+            border-style: none;
+            border-radius: 0.5em;
+            color: white;
+        }
+        .match{
+            padding-left: 2.2em;
+            padding-right: 2.2em;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .center-small {
+            margin-left: 40%;
+            padding-right: 4em;
+            padding-left: 4em;
+        }
+        .center-large {
+            margin-left: 45%;
+            padding-right: 4em;
+            padding-left: 4em;
+        }
+        .push-down {
+            margin-top: 1em;
+        }
+        .white-color {
+            color:white;
+        }
+        .contain {
+            width: 90%;
+        }
+        .pad-fix {
+            padding-left: 3em;
+            padding-right: 3em;
+        }
+    </style>
+
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
                 <img src="gk_logo.png" width="35" height="35" alt="GoalKeeper Logo">
         </a>
@@ -14,7 +106,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -36,6 +128,9 @@
                 <a class="nav-link" href="#">My Targets</a>
             </li>
           </ul>
+          <span class="navbar-text">
+                DASHBOARD
+          </span>
           <form class="form-inline">
             <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Sign Out</button>
@@ -43,41 +138,126 @@
         </div>
       </nav>
 
-      <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
-            <!-- Position it -->
-            <div style="position: absolute; top: 0; left: 0;">
-          
-              <!-- Then put toasts within -->
-              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="..." class="rounded mr-2" alt="...">
-                  <strong class="mr-auto">Bootstrap</strong>
-                  <small class="text-muted">just now</small>
-                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="toast-body">
-                  See? Just like this.
-                </div>
-              </div>
-          
-              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="..." class="rounded mr-2" alt="...">
-                  <strong class="mr-auto">Bootstrap</strong>
-                  <small class="text-muted">2 seconds ago</small>
-                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="toast-body">
-                  Heads up, toasts will stack automatically
-                </div>
-              </div>
+      <div class="large-space"></div>
+      
+      <h1 id="title" style="margin-top: 2em;">Your Command Center</h1>
+<div class="container-fluid contain">
+      <div class="row align-items-center" id="cards">
+            <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                            <img src="cardsImgs/coding.jpg" class="card-img-top" alt="Programming">
+                            <div class="card-body">
+                              <h5 class="card-title">DS Project</h5>
+                              <p class="card-text">Finish my DS project, by <b>Saturday, 30 Nov 2020</b>. My project is to create an algorithm to calculate the shortest path to the Moon.</p>
+                              <button type="button" class="btn btn-success">Explore Goal</button>
+                              <button type="button" class="btn btn-danger match" style="float: right;" id="btn-d-1">Delete</button>
+                            </div>
+                    </div>
             </div>
-          </div>
+            <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                            <img src="cardsImgs/exercise.jpg" class="card-img-top" alt="Exercise Daily">
+                            <div class="card-body">
+                              <h5 class="card-title">Exercise for an Hour</h5>
+                              <p class="card-text">Exercise every morning from 5am to 6am, and get some fresh air. Run for 1 Km and do 40 push-ups.<br/>Don't forget to wear the new runnning shoes.</p>
+                              <button type="button" class="btn btn-success">Explore Goal</button>
+                              <button type="button" class="btn btn-danger match" style="float: right;" id="btn-d-2">Delete</button>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                            <img src="cardsImgs/healthyFood.jpg" class="card-img-top" alt="Eat Healthy">
+                            <div class="card-body">
+                              <h5 class="card-title">Eat Healthy</h5>
+                              <p class="card-text">Eat more greens, boiled eggs for breakfast, salad for lunch, with a glass of milk. Mashed potatoes and green beans with bacon for dinner.</p>
+                              <button type="button" class="btn btn-success">Explore Goal</button>
+                              <button type="button" class="btn btn-danger match" style="float: right;" id="btn-d-3">Delete</button>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                            <img src="cardsImgs/night.jpg" class="card-img-top" alt="Sleep Early">
+                            <div class="card-body">
+                              <h5 class="card-title">Sleep on Time</h5>
+                              <p class="card-text">Wake up 5:00AM, sleep by 9:30PM.<br/> Use <i>blue-light filter</i> on by smart-phone and laptop. Smart-phone in airplane mode by 8:00PM</p>
+                              <button type="button" class="btn btn-success">Explore Goal</button>
+                              <button type="button" class="btn btn-danger match" style="float: right;" id="btn-d-4">Delete</button>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                            <img src="cardsImgs/meeting.jpg" class="card-img-top" alt="Ace That Meeting">
+                            <div class="card-body">
+                              <h5 class="card-title">Ace that Meeting</h5>
+                              <p class="card-text">Convey my points clearly & accurately in today's<br/><b>Web Technologies - I</b> presentation.Collect constructive feedback and work according it.</p>
+                              <button type="button" class="btn btn-success">Explore Goal</button>
+                              <button type="button" class="btn btn-danger match" style="float: right;" id="btn-d-5">Delete</button>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+    <div class="large-space"></div>
+
+    <hr/>
+
+    <div class="large-space"></div>
+
+    <h1 id="title">Your Feed</h1>
+    <div class="container-fluid contain">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                    <div class="jumbotron jumbotron-fluid gradient-b-r">
+                            <div class="container">
+                            <h1 class="display-4 smaller">The Results are In! <i class="fas fa-poll" class="white-color"></i></h1>
+                            <p class="lead">This Week, we conducted a survey, to find out how community members manage to stick to their goals, come rain or shine.<br/>The results are in and are quite surprising, read on to find out!</p>
+                            <span class="expContent"></span>
+                            <button type="button" class="btn btn-dark center-large push-down" id="contentControlButton">Expand</button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm">
+                    <div class="jumbotron jumbotron-fluid gradient-lb-db pad-fix">
+                            <div class="container">
+                              <h1 class="display-4 smaller">Ask the Goal Coach! <i class="fas fa-user-md"></i></h1>
+                              <p class="lead">This Week, we asked the community's, most popular questions, to leading,<br/> life coach Miss Isabella Carra.</p>
+                              <br>
+                              <span class="expContent"></span>
+                              <button type="button" class="btn btn-primary center-small push-down" id="contentControlButton">Expand</button>
+                            </div>
+                    </div>
+            </div>
+            <div class="col">
+                    <div class="jumbotron jumbotron-fluid gradient-l-p pad-fix">
+                            <div class="container">
+                              <h1 class="display-4 smaller">The Results are In! <i class="fas fa-poll" class="white-color"></i></h1>
+                              <p class="lead">This Week, we conducted a survey, to find out how community members manage to stick to their goals, come rain or shine.<br/>The results are in and are quite surprising, read on to find out!</p>
+                              <span class="expContent"></span>
+                              <button type="button" class="btn btn-success center-small push-down" id="contentControlButton">Expand</button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+                <div class="col-sm">
+                        <div class="jumbotron jumbotron-fluid gradient-r-b">
+                                <div class="container">
+                                <h1 class="display-4 smaller">The Results are In! <i class="fas fa-poll" class="white-color"></i></h1>
+                                <p class="lead">This Week, we conducted a survey, to find out how community members manage to stick to their goals, come rain or shine.<br/>The results are in and are quite surprising, read on to find out!</p>
+                                <span class="expContent"></span>
+                                <button type="button" class="btn btn-dark center-large push-down" id="contentControlButton">Expand</button>
+                                </div>
+                        </div>
+                </div>
+            </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="cardManager.js"></script>
 </html>
