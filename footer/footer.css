@@ -10,6 +10,10 @@ footer {
   border-radius: 1em 1em 0em 0em;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 footer #gap {
     margin-top: 6em;
 }
@@ -20,7 +24,7 @@ footer h2 {
 
 footer .footer__block {
   text-align: center;
-  margin: 0em 5.75em;
+  margin: 0em 5em;
   float: left;
 }
 
@@ -37,10 +41,6 @@ footer ul {
   padding-left: 0;
 }
 
-footer li {
-  padding: 1em 0em;
-}
-
 footer a, span{
   font-size: 1.1em;
   text-decoration: none;
@@ -48,15 +48,17 @@ footer a, span{
   color: white;
 }
 
-input[type=text], input[type=email], textarea{
+footer input[type=text], input[type=email], textarea{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   padding: 0.5em 0.5em;
-  margin: 0.25em 0.25em;
+  margin: 0.25
+  em 0.25em;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 
 input[type=text].large, input[type=email].large {
     width: 21.25em;
@@ -83,7 +85,8 @@ button:focus {
 }
 
 div.comboBtn {
-    position: absolute;
+  position: relative;
+  right: 0.5em;
 }
 
 div .clearText {
@@ -98,85 +101,7 @@ div .clearText {
 }
 
 #helper {
-    padding-top: 5em;
-}
-
-#btn{
-    position: relative;
-    top: 8em;
-    left: 2em;
-  margin: 4em;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  color: white;
-  padding: 9px 15px;
-  border-style: none;
-  box-shadow: 0px 3px 8px #e0e0e0;
-  letter-spacing: 0.1em;
-  border-radius: 4px;
-  outline: none;
-  -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.small {
-    font-size: 0.75em;
-  }
-  
-.large {
-    font-size: 1.25em;
-}
-
-#btn:hover {
-    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24);
-}
-
-#btn.info {
-    background-color: #3f51b5;
-}
-#btn.info:active {
-    box-shadow: 0 7px 8px 0 #3f51b5;
-    transform: translateY(3px);
-}
-
-#btn.success {
-    background-color: #0CCA4A;
-}
-#btn.success:active {
-    box-shadow: 0 7px 8px 0 #0CCA4A;
-    transform: translateY(3px);
-}
-
-#btn.warning {
-    background-color: #FFA807;
-}
-#btn.warning:active {
-    box-shadow: 0 7px 8px 0 #FFA807;
-    transform: translateY(3px);
-}
-
-#btn.danger {
-    background-color: #BD1E1E;
-}
-#btn.danger:active {
-    box-shadow: 0 7px 8px 0 #BD1E1E;
-    transform: translateY(3px);
-}
-
-#btn.olive {
-    background-color: #3B413C;
-}
-#btn.olive:active {
-    box-shadow: 0 7px 8px 0 #3B413C;
-    transform: translateY(3px);
-}
-
-#btn.uber {
-    background-color: #663889;
-}
-#btn.uber:active {
-    box-shadow: 0 7px 8px 0 #663889;
-    transform: translateY(3px);
+    padding-top: 1em;
 }
 
 footer img {
@@ -185,4 +110,9 @@ footer img {
 
 footer #controlBoxTa {
   resize: none;
+}
+
+#btn {
+  position: relative;
+  top: -2em;
 }
