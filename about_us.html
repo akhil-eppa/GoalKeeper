@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
     <link rel="stylesheet" href="footer/footer.css">
+    <script src="jquery-3.4.1.min.js"></script>
+
+    <script src="jquery_file.js"></script>
     <style>
         
         *{ /* * indicates everything*/
@@ -136,7 +139,7 @@
             <img alt = "GoalKeeperLogo" src="gk_logo.png" id="logo"></img>
             <ul id = "navBarList">
             <!--<li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>-->
-            <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+            <span class = "vl"><li class = "navBarItem element"><a href = "home.html">Home</a></li></span>
             <span class = "vl"><li class = "navBarItem element"><a href = "add_goal.html">Add Goal</a></li></span>
             <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">About Us</a></li></span>
             <li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
@@ -162,7 +165,7 @@
     <div class=box></div>
 
 
-    <table> <!-- Here basically what we are doing is creating rows of a table and dividing it into 2 td's one with picture and other with the text with apropriate spacing in %-->
+    <table id="t1"> <!-- Here basically what we are doing is creating rows of a table and dividing it into 2 td's one with picture and other with the text with apropriate spacing in %-->
     <tr>
     <td width="70%">
     <div id="p1" class=topics>
@@ -183,7 +186,7 @@
     </div>
     </td>
     <td>        
-            <img src="about.png" align="left"></img>       
+            <img id="i1" src="about.png" align="left" ></img>       
     </td>
     </tr>
     </table>
@@ -192,10 +195,10 @@
     <div class=box></div>
 
 
-    <table>
+    <table id="t2">
     <tr>
     <td width="30%">
-            <img src="goal1.png" align="right" width="315px" height="235.5px"></img>   
+            <img src="goal1.png" align="right" width="315px" height="235.5px" id="i2"></img>   
     </td>
     <td width="70%">
     <div id="p2" class=topics>
@@ -218,7 +221,7 @@
 
     <div class=box></div>
 
-    <table>
+    <table id="t3">
     <tr>
     <td width="70%">
     <div id="p3" class=topics>
@@ -240,7 +243,7 @@
     </div>
     </td>
     <td>
-        <img src="list.png" align="left" width="244.58px" height="300px"></img>
+        <img src="list.png" align="left" width="244.58px" height="300px" id="i3"></img>
     </td>
     </tr>
     </table>
