@@ -116,7 +116,7 @@ input[type="submit"]:focus
 .facebook
 {
     background: #0064E8;
-    
+    font-size: 1em;
     margin-top: 25px;
     margin-bottom: 30px;
     width: 220px;
@@ -131,6 +131,7 @@ input[type="submit"]:focus
 }
 .twitter
 {
+    font-size: 1em;
     background: #55acee;
     margin-top: 30px;
     margin-bottom: 100px;
@@ -147,7 +148,7 @@ input[type="submit"]:focus
 .google
 {
     background: red;
-
+    font-size: 1em;
     top: 300px;
     margin-top: 50px;
     margin-bottom: 30px;
