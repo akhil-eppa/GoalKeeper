@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ // For the goalkeeper symbol on the top of the page
     
         $("#logo_head").fadeOut();
         $("#logo_head").fadeIn("slow");
@@ -18,3 +18,4 @@ $(document).ready(function(){
     });
 }
 );
+// i1,i2 and i3 for the remaining images on the webpage

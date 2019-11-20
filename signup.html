@@ -6,11 +6,19 @@
     <link rel="stylesheet" type="text/css" href="signup_style.css">
     <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
     <link rel = "stylesheet" href = "signup_card.css">
+    <link rel="stylesheet" href="button.css">
+
     <style>
+    
+
          #navBarList {
         height: 1.5em;
         margin-left: 2em;
         padding-top: 0.35em;
+        }
+        .cardTitle{
+        
+            font-size: 2.5em;
         }
     </style>
 </head>
@@ -19,7 +27,7 @@
         <img alt = "GoalKeeperLogo" src="gk_logo.png" id="logo"></img>
         <ul id = "navBarList">
         <!--<li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>-->
-        <span class = "vl"><li class = "navBarItem element"><a href = "#">Home</a></li></span>
+        <span class = "vl"><li class = "navBarItem element"><a href = "index.html">Home</a></li></span>
         <span class = "vl"><li class = "navBarItem element" ><a href = "about_us.html">About Us</a></li></span>
         <li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
         <span class = "rightSide">
@@ -39,22 +47,45 @@
         <br/>
        <span class="cardTitle">SIGN UP</span>
 <!-- Need to prepare clear show remember me and outline design of the page-->
-    <form action="" method="GET">   
+    <form action="" method="GET" name="form1">   
     <div id="sign_up">
         <div class="left_box">
-            <input type="text" placeholder="First Name" name="first"/>
-            <input type="text" placeholder="Email ID" name="email"/>
-            <input type="text" placeholder="Phone Number" name="number"/>
-            <input type="text" placeholder="First Name" name="first"/>
+            <input type="text" placeholder="First Name" name="first" />
+            <input type="text" placeholder="Email ID" name="email" />
+            <input type="text" placeholder="Phone Number" name="number" />
+            <input type="text" placeholder="Question" name="question" />
         </div>
         <div class="right_box">
-            <input type="text" placeholder="Last Name" name="last"/>
-            <input type="password" placeholder="Password" name="password"/>
-            <input type="password" placeholder="Confirm Password" name="cpassword"/>
-            <input type="text" placeholder="Your Answer" name="securityanswer"/>
+            <input type="text" placeholder="Last Name" name="last" />
+            <input type="password" placeholder="Password" name="password" />
+            <input type="password" placeholder="Confirm Password" name="cpassword" />
+            <input type="text" placeholder="Your Answer" name="securityanswer" />
             
         </div>
     </div>
-    <center> <input type="submit" value="REGISTER" class="success"/> </center>
+    <center> <input type="submit" id="btn" value="REGISTER" class="danger"/> </center>
+    <script>
+        var x=document.getElementById("btn");
+        x.addEventListener("click",check,false);
+        function check(){
+         var arr = new Array();
+            arr[0] = document.forms["form1"]["first"].value;
+            arr[1] = document.forms["form1"]["email"].value;
+            arr[2] = document.forms["form1"]["number"].value;
+            arr[3] = document.forms["form1"]["question"].value;
+            arr[4]= document.forms["form1"]["last"].value;
+            arr[5] = document.forms["form1"]["password"].value;
+            arr[6] = document.forms["form1"]["cpassword"].value;
+            arr[7]= document.forms["form1"]["first"].value;
+            for (var i=0; i<8 ; i++)
+            {
+                if (arr[i]=="")
+                {
+                    alert("One or more fields missing!");
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
 </html>
