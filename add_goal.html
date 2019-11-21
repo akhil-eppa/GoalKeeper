@@ -133,7 +133,7 @@
                             <div class="box"></div>
                             <hr>
                             <div class="box"></div>
-                            <form>
+                            <form action="" method="GET" name="form1">
                                     <center>What's the Title of your Goal?</center><br>  
                                     <center><input type="text" name="title" placeholder="Enter Title Here"></center>
                                     <div class="box"></div>
@@ -145,7 +145,7 @@
                                     <table id="yesno">
                                         <tr>
                                             <td width="25%">
-                                                <center><input type="radio" name="time_bound" value="Yes" id="rd">Yes</center>
+                                                <center><input type="radio" name="time_bound" value="Yes" id="rd" checked>Yes</center>
                                             </td>
                                             <td width ="25%"></td>
                                             <td width ="25%"></td>
@@ -193,7 +193,7 @@
                                     </center>
                                     
                                     <center>
-                                        <input type="submit" id = "btn1" value="Add my Goal"  class = "success">
+                                        <input type="submit" id ="btn1" value="Add my Goal"  class = "success">
                                 </center>
                                     
                                 </form>
@@ -272,6 +272,23 @@
             </footer>
             <script src="footer/footer.js" type="text/javascript"></script>
             <script>
+                var t=document.getElementById("btn1");
+                t.addEventListener("click",check,false);
+                function check(){
+                 var arr = new Array();
+                    arr[0] = document.forms["form1"]["title"].value;
+                    arr[1] = document.forms["form1"]["description"].value;
+                    
+                    for (var i=0; i<2 ; i++)
+                    {
+                        if (arr[i]=="")
+                        {
+                            alert("You have not filled the text field values! Please fill them");
+                            break;
+                        }
+                    }
+                }
+                /*
                 var y=document.getElementById("form");
                 y.addEventListener("click","cal",false);
                 cal_1=document.getElementById("cal1");
@@ -289,11 +306,14 @@
                         cal_1.setAttribute("enabled","false");
                         cal_2.setAttribute("enabled","false");
                     }
-                }
+                }*/
+
+                
                 
                 
                 
             </script>
+            
 
     </body>
 </html>
