@@ -2,8 +2,10 @@ footer {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
   left: 0em;
-  bottom: -40em; /* To make the footer a bit below the actual body of the text to be inserted */
-  width: 100%;
+
+  bottom: -40em;
+  width: 147%;
+
   background-color: #2C365E;
   color: white;
   border: 0.1em solid #2C365E;
@@ -24,7 +26,7 @@ footer h2 {
 
 footer .footer__block {
   text-align: center;
-  margin: 0em 5em;
+  margin: 0em 3em;
   float: left;
 }
 
@@ -106,6 +108,7 @@ div .clearText {
 
 footer img {
     margin-top: 3em;
+    margin-left: 3em;
 }
 
 footer #controlBoxTa {
@@ -115,4 +118,12 @@ footer #controlBoxTa {
 #btn {
   position: relative;
   top: -2em;
+}
+
+li#location {
+  margin-left: 3em;
+}
+
+h2#location {
+  margin-left: 2em;
 }
