@@ -2,8 +2,10 @@ footer {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
   left: 0em;
+
   bottom: -40em;
   width: 147%;
+
   background-color: #2C365E;
   color: white;
   border: 0.1em solid #2C365E;
@@ -11,7 +13,7 @@ footer {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* Reason why there is no scroll bar for the footer */
 }
 
 footer #gap {

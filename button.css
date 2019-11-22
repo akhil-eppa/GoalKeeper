@@ -54,7 +54,7 @@
 }
 #btn.danger:active {
     box-shadow: 0 7px 8px 0 #BD1E1E;
-    transform: translateY(3px);
+    transform: translateY(3px); /* When clicked on the button, it will tranform and then come back to original setting */
 }
 
 #btn.olive {
