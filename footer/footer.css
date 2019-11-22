@@ -26,7 +26,8 @@ footer h2 {
 
 footer .footer__block {
   text-align: center;
-  margin: 0em 3em;
+  margin: 0em 2.75em;
+  width: 13%;
   float: left;
 }
 
@@ -63,7 +64,7 @@ footer input[type=text], input[type=email], textarea{
 
 
 input[type=text].large, input[type=email].large {
-    width: 21.25em;
+    width: 15.25em;
 }
 
 input[type=text].rounded, input[type=email].rounded, textarea {
@@ -108,11 +109,12 @@ div .clearText {
 
 footer img {
     margin-top: 3em;
-    margin-left: 3em;
+    margin-left: 0.25em;
 }
 
 footer #controlBoxTa {
   resize: none;
+  width: 13em;
 }
 
 #btn {
@@ -121,9 +123,9 @@ footer #controlBoxTa {
 }
 
 li#location {
-  margin-left: 3em;
+  margin-left: 0em;
 }
 
 h2#location {
-  margin-left: 2em;
+  margin-left: 0em;
 }
