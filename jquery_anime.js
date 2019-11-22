@@ -8,3 +8,13 @@ $(document).ready(function(){
       $("#anime").hide(7000);
     });
   });
+$(document).ready(function(){
+  $("#jqueryanime2").click(function(){
+    $("#anime2").show();
+    var div1 = $("#anime2");
+    div1.animate({height: '125px'});
+    div1.animate({width: '200px'});
+    div1.animate({fontSize: '2em'});
+    $("#anime2").hide(7000);
+  });
+});
