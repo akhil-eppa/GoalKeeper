@@ -8,7 +8,7 @@
     <link rel = "stylesheet" href = "css/all.css">
     <link rel = "stylesheet" href = "jumbotron.css">
     <link rel="stylesheet" href="button.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Lato:300i|Open+Sans|Oswald:400,500|Roboto&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i|Open+Sans|Oswald:400,500|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
     <link rel="stylesheet" href="footer/footer.css">
@@ -57,6 +57,12 @@
         width:70%;
         margin-left: 15%;
         font-size: 150%;
+    }
+    span.bigHead {
+        color:#26A5A5;
+        font-weight:300;
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
     }
     </style>
 </head>
@@ -152,7 +158,7 @@
     <br>
     <br>
     <div class="blockquote">
-        <center><b style="color:#26A5A5;">GOOD THINGS COME TO THOSE WHO WAIT..<br>SIGN UP TO BEGIN YOUR JOURNEY! </b></center>
+        <center><span class="bigHead" id = "fadeFirst">GOOD THINGS COME TO THOSE WHO WAIT..</span><br><span  class="bigHead" id = "fadeSecond">SIGN UP TO BEGIN YOUR JOURNEY!</span></center>
     </div>
     <br>
 
