@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Elements</title>
+        <title>Home</title>
         <link rel = "stylesheet" href = "carousel.css">
         <link rel = "stylesheet" href = "cards.css">
         <link rel = "stylesheet" href = "cardsGrid.css">
         <link rel = "stylesheet" href = "css/all.css">
         <link rel = "stylesheet" href = "jumbotron.css">
+        <link rel="stylesheet" href="button.css">
         <!--<link href="https://fonts.googleapis.com/css?family=Lato:300i|Open+Sans|Oswald:400,500|Roboto&display=swap" rel="stylesheet">-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="navbar.css"> <!-- For the navigation bar-->
         <link rel="stylesheet" href="footer/footer.css">
         <style>
+            *{
+            
+            font-family: 'Ubuntu', sans-serif;
+            }
             h1{
             color:black;
             cursor:pointer;
@@ -36,7 +41,7 @@
         font-family: 'Open Sans', sans-serif;
         position: absolute;
         left: 0em;
-        bottom: -130em;
+        bottom: -110em;
         width: 100%;
         background-color: #2C365E;
         color: white;
@@ -45,6 +50,13 @@
         }
         #box{
             height:30px;
+        }
+        #home_content{
+            color: #2C365E;
+            margin-top: 20px;
+            width:70%;
+            margin-left: 15%;
+            font-size: 150%;
         }
         </style>
     </head>
@@ -110,8 +122,7 @@
             <span class="dot p3" onclick="currentSlide(3)"></span>
         </div>
     </div>
-    <center><h1 id="heading">GoalKeeper</h1></center>
-    <br>
+    
     <br>
     
     <div class="blockquote">
@@ -181,13 +192,13 @@
 
         <div class = "jumbotron img-left">
             <img src = "goal2.jpg" alt = "picture of a bulb">
-           <center> First sign up and then begin adding your goals one by one.
+           <center id="home_content"> First sign up and then begin adding your goals one by one.
             You can add goals, add habits and keep track of them by visiting the dashboard. Hence become more proficient at achieving your goals and habits.</center>
         </div>
 
         <div class = "jumbotron img-right">
             <img src = "medal_image.jpg" alt = "picture of a bulb">
-           <center> Also get medals when you acheive your goals. This is an added motivation for you to track your goals and accomplish them. To know more visit our faq and about us page.</center>
+           <center id="home_content"> Also get medals when you acheive your goals. This is an added motivation for you to track your goals and accomplish them. To know more visit our faq and about us page.</center>
         </div>
         <footer>
                 <div class="footer__block">

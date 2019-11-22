@@ -108,8 +108,11 @@
                     <img alt = "GoalKeeperLogo" src="gk_logo.png" id="logo"></img>
                     <ul id = "navBarList">
                     <!--<li class = "navBarItem altSize"><img alt = "GoalKeeperLogo"></img></li>-->
-                    <span class = "vl"><li class = "navBarItem element"><a href = "home.html">Home</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element"><a href = "index.html">Home</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "add_goal.html">Add Goal</a></li></span>
                     <span class = "vl"><li class = "navBarItem element" ><a href = "#" id="active">Add Habit</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "add_medals.html">Medals</a></li></span>
+                    <span class = "vl"><li class = "navBarItem element" ><a href = "dashboard.html">Dashboard</a></li></span>
                     <span class = "vl"><li class = "navBarItem element" ><a href = "about_us.html">About Us</a></li></span>
                     </span><li class = "navBarItem element"><a href = "faq.html">FAQ</a></li>
                     <span class = "rightSide">
@@ -133,7 +136,7 @@
                             <div class="box"></div>
                             <hr>
                             <div class="box"></div>
-                            <form>
+                            <form action="" method="POST" name="form1">
                                     <center>Title Of Habit</center><br>  
                                     <center><input type="text" name="title" placeholder="Enter Title Here"></center>
                                     <div class="box"></div>
@@ -273,6 +276,24 @@
                     </div>
                 </footer>
                 <script src="footer/footer.js" type="text/javascript"></script>
+                <script>
+                    var x=document.getElementById("btn1");
+                    x.addEventListener("click",check,false);
+                    function check(){
+                     var arr = new Array();
+                        arr[0] = document.forms["form1"]["title"].value;
+                        arr[1] = document.forms["form1"]["description"].value;
+                        
+                        for (var i=0; i<2 ; i++)
+                        {
+                            if (arr[i]=="")
+                            {
+                                alert("You have not filled the text field values! Please fill them");
+                                break;
+                            }
+                        }
+                    }
+                </script>
 
     </body>
 </html>
