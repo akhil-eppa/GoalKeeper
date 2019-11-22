@@ -1,28 +1,14 @@
 <?php
-extract($_POST);
 
-// $email
-// $first
-// $number
-// $question
-// $last
-// $password
-// $cpassword
-// $securityanswer
+// include the configs / constants for the database connection
+require_once("config/db.php");
 
-$id = 0;
+// load the registration class
+require_once("classes/Registration.php");
 
-$dbLink = mslqi_connect("localhost", "root", "");
-if(!dbLink) {
-    die("Could not connect to db!");
-}
+// create the registration object. when this object is created, it will do all registration stuff automatically
+// so this single line handles the entire registration process.
+$registration = new Registration();
 
-mysqli_select_db($dbLink, "reg");
-
-$queryString = "insert into reg values ('".$id."', '".$email."', '".$first."', '".$number."', '".$question."', '".$last."', '".$password."', '".$cpassword."', '".$securityanswer."')";
-$result = mysqli_query($dbLink, $queryString);
-
-if(!result) {
-    die("The query did not work!");
-}
-?>
+// show the register view (with the registration form, and messages/errors)
+include("views/register.php");
